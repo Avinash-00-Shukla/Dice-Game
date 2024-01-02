@@ -12,33 +12,34 @@
 <body style="background-color: #FAEED1;">
     <!-- Navbar starts here -->
     <nav class="navbar navbar-dark" aria-label="First navbar example" style="background-color: #607274;">
-        <div class="container-fluid" style="display: flex; justify-content: center; align-items: center;">
-            <h3 class = "result" style="color: white; font-size: 4rem;">!! DICE GAME !!</h3> 
+        <div class="container-fluid d-flex justify-content-center align-items-center">
+            <h3 class = "result" style="color: white; font-size: 3rem;">!! DICE GAME !!</h3> 
         </div>
     </nav>
     <!-- Navbar ends here -->
 
     <!-- Content Grid Starts here -->
-    <div class="central-grid">
+    <div class="container-fluid central-grid" style="width: 100%;" id="main-content">
         <div class="container-fluid">
             <div class="row">
                 <!-- First Column -->
-                <div class="col">
+                <div class="col-md-4">
                     <img src="./assets/p1.jpeg" class="img-fluid card-img player1-card">
                 </div>
 
                 <!-- Second Column -->
-                <div class="col">
+                <div class="col-md-4">
                     <!-- First Row in Second Column -->
-                    <div class="row" style="height: 30%;">
+                    <div class="row" style="height: 20%;">
                         <div class="col central-grid"> 
-                            <button type="button" class="btn btn-primary btn-lg" onclick="played()">Click To Play</button>
+                            <button type="button" class="btn btn-primary btn-lg btn-block btn-sm" onclick="played()">Click To Play</button>
                         </div>
                     </div>
 
-                    <div class="row" style="height: 40%;">
+                    <!-- Second Row in Second Column -->
+                    <div class="row" style="height: 60%;">
                         <div class="col central-grid" style="background-color: #607274; border-radius: 20px"> 
-                            <div class="scoreboard" style="color: white; font-size: 1.5rem;"> 
+                            <div class="scoreboard" style="color: white; font-size: 1rem;"> 
                                 Score Board </br>
                                 Player 1 : <span class="p1_score"> 0 </span></br>
                                 Player 2 : <span class="p2_score"> 0 </span></br>
@@ -47,16 +48,16 @@
                         </div>
                     </div>
                     
-                    <!-- Second Row in Second Column -->
-                    <div class="row" style="height: 30%;">
+                    <!-- Third Row in Second Column -->
+                    <div class="row" style="height: 20%;">
                         <div class="col central-grid"> 
-                                <button type="button" class="btn btn-primary btn-lg" onclick="reset()">Reset Game</button> 
+                            <button type="button" class="btn btn-primary btn-lg btn-block btn-sm" onclick="reset()">Reset Game</button>
                         </div>
                     </div>
                 </div> 
 
                 <!-- Third Column -->
-                <div class="col">
+                <div class="col-md-4">
                     <img src="./assets/p2.jpeg" class="img-fluid card-img player2-card">
                 </div>
             </div>
